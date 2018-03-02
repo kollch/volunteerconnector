@@ -353,18 +353,25 @@ a:focus {
 }
 /* post css */
 .event {
-  background-color: #262A23;
-  border-color: #848F7A;
-  border-radius: 30px;
+  background-color: #ffffff;
+  border-color: #000000;
+  border-radius: 10px;
   border: 1px solid;
-  display: inline-flex;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  /* display: inline-flex; */
   padding: 15px;
-  width: 320px;
-  margin-left: 50%;
+  width: 600px;
+  margin-left: 40%;
+  margin-top: 10px;
+  font-size: 24px;
   /* margin-right: 50%; */
 }
 .eventDetails {
   word-wrap: break-word;
+}
+.shortDescription{
+  font-size: 18px;
+
 }
 .imgContainer img {
 
