@@ -14,18 +14,24 @@ a {
 }
 #title-searches{
   float: left;
-  width:140%;
+  /* width:140%; */
+  width:85%
 }
 #title-search{
-  display: inline-block
+  display: inline-block;
+  width: 15%;
+
 }
 #searchbar{
-  float: right;
-  margin: 10px;
+  /* float: right; */
+  margin-top: 8px;
+  margin-left:15%;
   padding: 0;
   height: 30px;
   font-size: 25px;
   width: 250px;
+/* the search bar is not in a relative position to the left, and will change depending on display size.
+what also needs to be fixed are the location of the register and sign in button locations */
 }
 
 .site-title {
