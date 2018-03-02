@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Volunteer Connector</title>
+
+    <!-- This is a stylesheet that includes the font you should use -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+
+    <link rel="stylesheet" href="/style.css" media="screen">
+
+  </head>
+
+  <body>
+
+    <header>
+    <h1 class="site-title">Volunteer Connector</h1>
+	  <button type="button" id="signin-button">Sign In</button>
+	  <button type="button" id="register-button">Register</button>
+
+    </header>
+
+    <main>
+        <!-- example post -->
+        <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+        <div class="eventContainer">
+          <!-- <div class="imgContainer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Weatherford_Hall_Oregon_State_University_Greg_Keene.jpg" alt="Campus Tours">
+          </div> -->
+          <div class="eventDetails">
+            <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+            <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+          </div>
+          <div class="eventDescription">
+              <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+
+    <div id="login-modal-backdrop" class="hidden"></div>
+    <div id="login-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Login</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-input-element">
+            <label for="username-input">Username</label>
+            <input type="text" id="username-input">
+          </div>
+          <div class="form-input-element">
+            <label for="password-input">Password</label>
+            <input type="text" id="password-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Login</button>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="register-modal-backdrop" class="hidden"></div>
+    <div id="register-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Register</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-mid">
+			<button type="button" class="modal-charity-button">Charity</button>
+
+			<button type="button" class="modal-volunteer-button">Volunteer</button>
+          </div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Register</button>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="charity-register-modal-backdrop" class="hidden"></div>
+    <div id="charity-register-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Register</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-input-element">
+            <label for="charity-username-input">Username</label>
+            <input type="text" id="charity-username-input">
+          </div>
+          <div class="form-input-element">
+            <label for="charity-password-input">Password</label>
+            <input type="text" id="charity-password-input">
+          </div>
+		  <div class="form-input-element">
+            <label for="charity-name-input">Charity Name</label>
+            <input type="text" id="charity-name-input">
+          </div>
+		  <div class="form-input-element">
+            <label for="charity-location-input">Location</label>
+            <input type="text" id="charity-location-input">
+          </div>
+		  <div class="form-input-element">
+            <label for="charity-description-input">Charity Description</label>
+            <textarea id="charity-description-input"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Register</button>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="volunteer-register-modal-backdrop" class="hidden"></div>
+    <div id="volunteer-register-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Register</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-input-element">
+            <label for="volunteer-username-input">Username</label>
+            <input type="text" id="volunteer-username-input">
+          </div>
+          <div class="form-input-element">
+            <label for="volunteer-password-input">Password</label>
+            <input type="text" id="volunteer-password-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Register</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+  <script src="/index.js" charset="utf-8"></script>
+
+</html>
