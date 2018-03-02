@@ -29,9 +29,10 @@ a {
 }
 
 .site-title {
+  white-space: nowrap;
   margin: 0;
   padding: 10px 20px;
-  padding-top: 40px;
+  padding-top: 45px;
   font-size: 30px;
   font-weight: 100;
   background-color: #319df6;
@@ -123,7 +124,7 @@ a:focus {
   right: 30px;
   bottom: 30px;
   height: 38px;
-  width: 100px;
+  width: 110px;
   border: none;
   border-radius: 10px;
   font-size: 20px;
@@ -152,7 +153,7 @@ a:focus {
   right: 30px;
   bottom: 30px;
   height: 38px;
-  width: 100px;
+  width: 110px;
   border: none;
   border-radius: 10px;
   font-size: 20px;
