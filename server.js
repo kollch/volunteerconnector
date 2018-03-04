@@ -7,10 +7,10 @@ const app  = express();
 const port = process.env.PORT || 3000;
 
 const con = mysql.createConnection({
-	host:     "oniddb.cws.oregonstate.edu",
-	user:     "kollch-db",
-	password: "VF9fitANb01MJRHn",
-	database: "kollch-db"
+	host:     "classmysql.engr.oregonstate.edu",
+	user:     "cs340_kollch",
+	password: "6730",
+	database: "cs340_kollch"
 });
 
 app.use(bodyParser.json())
@@ -45,5 +45,4 @@ app.get('*', function(req, res) {
 app.listen(port, function () {
 	console.log("== Listening on port", port);
 });
-
 
