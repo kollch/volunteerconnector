@@ -17,20 +17,34 @@
 
   <body>
 
-    <header>
-    <h1 class="site-title">Volunteer Connector</h1>
-	  <button type="button" id="signin-button">Sign In</button>
-	  <button type="button" id="register-button">Register</button>
+      <header>
+          <div id="title-main">
+            <div id="title-searches">
+              <h1 class="site-title">Volunteer Connector</h1>
+            </div>
 
-    </header>
+            <div id="title-search">
+                <input id="searchbar" type="txt" name="" value="Search">
+
+                <button type="button" id="signin-button">Search</button>
+                <button type="button" id="register-button">Register</button>
+            </div>
+          </div>
+        </header>
 
     <main>
+      <!-- volunteer oppurtunites header -->
+        <div class="posts-header">
+          <div>
+            <a href="#" class="posts-link"> VOLUNTEER OPPORTUNITES </a>
+            <!-- the link in this href should link to just the posts page -->
+          </div>
+        </div>
+<!-- my goal is to have these these posts inserted dynamically based on the posts in the database using handlebars but at the moment
+these posts serve as an example of what a posts should like, and what the posts feed should look like - coulby nguyen -->
         <!-- example post -->
         <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
-          <!-- <div class="imgContainer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Weatherford_Hall_Oregon_State_University_Greg_Keene.jpg" alt="Campus Tours">
-          </div> -->
           <div class="eventDetails">
             <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
@@ -40,6 +54,108 @@
           </div>
         </div>
       </div>
+
+<!-- example post2 -->
+      <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+      <div class="eventContainer">
+        <div class="eventDetails">
+          <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+          <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+        </div>
+        <div class="eventDescription">
+            <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- example post3 -->
+    <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+    <div class="eventContainer">
+      <div class="eventDetails">
+        <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+        <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+      </div>
+      <div class="eventDescription">
+          <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- example post4 -->
+  <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+  <div class="eventContainer">
+    <div class="eventDetails">
+      <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+      <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+    </div>
+    <div class="eventDescription">
+        <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+    </div>
+  </div>
+</div>
+
+<!-- example post5 -->
+<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+<div class="eventContainer">
+  <div class="eventDetails">
+    <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+    <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+  </div>
+  <div class="eventDescription">
+      <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+  </div>
+</div>
+</div>
+
+<!-- example post6 -->
+<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+<div class="eventContainer">
+  <div class="eventDetails">
+    <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+    <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+  </div>
+  <div class="eventDescription">
+      <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+  </div>
+</div>
+</div>
+
+<!-- example post7 -->
+<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+<div class="eventContainer">
+  <div class="eventDetails">
+    <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+    <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+  </div>
+  <div class="eventDescription">
+      <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+  </div>
+</div>
+</div>
+<!-- example post8 -->
+<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+<div class="eventContainer">
+  <div class="eventDetails">
+    <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+    <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+  </div>
+  <div class="eventDescription">
+      <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+  </div>
+</div>
+</div>
+<!-- example post9 -->
+<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+<div class="eventContainer">
+  <div class="eventDetails">
+    <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+    <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
+  </div>
+  <div class="eventDescription">
+      <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+  </div>
+</div>
+</div>
 
 
     </main>
@@ -166,6 +282,50 @@
 
       </div>
     </div>
+
+<!-- below is the modal for a charity to add a new post it will toggle hidden if the account is a organization, and will be hidden if the account is just a volunteer user -->
+    <div id="add-event-modal" class="">
+    <div class="modal-dialog">
+
+      <div class="modal-header">
+        <h3>Post New Opportunity</h3>
+        <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="post-input-element">
+          <label for="event-name-input">Name Of Event</label>
+          <input type="text" id="event-name-input"></input>
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-location-input">Location Of Event</label>
+          <input type="text" id="event-location-input"></input>
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-date-input">Date of Event</label>
+          <input type="date" id="event-date-input">
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-time-input">Time of Event</label>
+          <input type="time" id="event-time-input">
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-description-input">Short Description</label>
+          <input type="text" id="event-description-input">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+        <button type="button" id="modal-accept" class="action-button">Create Post</button>
+      </div>
+    </div>
+  </div>
 
   </body>
 
