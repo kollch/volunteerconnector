@@ -384,7 +384,7 @@ a:focus {
   background-color: #087dde;
 }
 /* post css */
-.event {
+.event , .posts-header {
   background-color: #ffffff;
   border-color: #000000;
   border-radius: 10px;
@@ -404,9 +404,4 @@ a:focus {
 .shortDescription{
   font-size: 18px;
 
-}
-.imgContainer img {
-
-  max-height: 240px;
-  max-width: 300px;
 }
