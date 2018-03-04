@@ -283,6 +283,50 @@ these posts serve as an example of what a posts should like, and what the posts 
       </div>
     </div>
 
+<!-- below is the modal for a charity to add a new post it will toggle hidden if the account is a organization, and will be hidden if the account is just a volunteer user -->
+    <div id="add-event-modal" class="">
+    <div class="modal-dialog">
+
+      <div class="modal-header">
+        <h3>Post New Opportunity</h3>
+        <button type="button" id="modal-close" class="modal-hide-button">&times;</button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="post-input-element">
+          <label for="event-name-input">Name Of Event</label>
+          <input type="text" id="event-name-input"></input>
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-location-input">Location Of Event</label>
+          <input type="text" id="event-location-input"></input>
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-date-input">Date of Event</label>
+          <input type="date" id="event-date-input">
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-time-input">Time of Event</label>
+          <input type="time" id="event-time-input">
+        </div>
+
+        <div class="post-input-element">
+          <label for="event-description-input">Short Description</label>
+          <input type="text" id="event-description-input">
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
+        <button type="button" id="modal-accept" class="action-button">Create Post</button>
+      </div>
+    </div>
+  </div>
+
   </body>
 
   <script src="/index.js" charset="utf-8"></script>
