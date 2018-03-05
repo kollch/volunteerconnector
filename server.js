@@ -26,8 +26,8 @@ app.set('view engine', 'html');
 // connect to mysql database
 con.connect(function(err){
 	if(err) {
-		console.log("== Error connecting to MySQL");  
-	} 
+		console.log("== Error connecting to MySQL");
+	}
 });
 
 // render home page
@@ -35,6 +35,11 @@ app.get('/', function(req, res) {
 	res.render('index', {
 	})
 })
+
+app.get('/account', function(req,res){
+	res.render('account',{
+	})
+});
 
 // 404 for all other pages
 app.get('*', function(req, res) {
@@ -45,4 +50,3 @@ app.get('*', function(req, res) {
 app.listen(port, function () {
 	console.log("== Listening on port", port);
 });
-
