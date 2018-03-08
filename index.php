@@ -21,10 +21,11 @@
           <div id="title-main">
             <div id="title-searches">
               <h1 class="site-title">Volunteer Connector</h1>
+			  			  <nav class="navbar">
 			  <ul class="navlist">
 
-			  <li class="navitem navlink active"><a href="./index.html">Home</a></li>
-      <li class="navitem navlink"><a href="./account.html">Account</a></li>
+			  <li class="navitem navlink active"><a href="./index.php">Home</a></li>
+      <li class="navitem navlink"><a href="./account.php">Account</a></li>
 
       <li class="navitem navbar-search">
         <input type="text" id="navbar-search-input" placeholder="Search...">
