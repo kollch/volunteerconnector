@@ -471,7 +471,7 @@ a:focus {
    /* background-color: rgba(0, 0, 0, 0.85); */
 }
 
-<<<<<<< HEAD
+
 #add-event-modal-backdrop {
   position: fixed;
   top: 0;
@@ -482,8 +482,7 @@ a:focus {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-=======
->>>>>>> 7952ba9a12402711839f33943cf185555e545b3f
+
 #modal-close {
   position: absolute;
   right: 10px;
