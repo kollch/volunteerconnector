@@ -7,10 +7,10 @@ const app  = express();
 const port = process.env.PORT || 3000;
 
 const con = mysql.createConnection({
-	host:     "classmysql.engr.oregonstate.edu",
-	user:     "cs340_kollch",
-	password: "6730",
-	database: "cs340_kollch"
+	host:     "oniddb.cws.oregonstate.edu",
+	user:     "dommed-db",
+	password: "jbuwCy1D7zCejTSU",
+	database: "dommed-db"
 });
 
 app.use(bodyParser.json())

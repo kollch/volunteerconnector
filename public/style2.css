@@ -244,6 +244,7 @@ a:focus {
   background-color: blue;
 }
 
+<<<<<<< HEAD
 #post-button {
   margin-left: 0px;
   margin-right: 40px;
@@ -275,6 +276,8 @@ a:focus {
   background-color: blue;
 }
 
+=======
+>>>>>>> 7952ba9a12402711839f33943cf185555e545b3f
 
 
 #login-modal-backdrop {
@@ -558,6 +561,7 @@ a:focus {
   left: 35%;
   /* right: 0; */
   z-index: 1010;
+<<<<<<< HEAD
   /*overflow: scroll;*/
    /* background-color: rgba(0, 0, 0, 0.85); */
 }
@@ -572,6 +576,12 @@ a:focus {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+=======
+  overflow: scroll;
+   /* background-color: rgba(0, 0, 0, 0.85); */
+}
+
+>>>>>>> 7952ba9a12402711839f33943cf185555e545b3f
 #modal-close {
   position: absolute;
   right: 10px;
