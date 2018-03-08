@@ -244,6 +244,37 @@ a:focus {
   background-color: blue;
 }
 
+#post-button {
+  margin-left: 0px;
+  margin-right: 40px;
+  margin-top: 15px;
+  float: right;
+  position: inline-block;
+  right: 27px;
+  bottom: 30px;
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+#post-button:hover,
+#post-button:focus {
+  right: 27px;
+  bottom: 30px;
+  height: 38px;
+  width: 110px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 22px;
+  background-color: blue;
+}
+
 
 
 #login-modal-backdrop {
@@ -527,8 +558,18 @@ a:focus {
   left: 35%;
   /* right: 0; */
   z-index: 1010;
-  overflow: scroll;
+  /*overflow: scroll;*/
    /* background-color: rgba(0, 0, 0, 0.85); */
+}
+
+#add-event-modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 #modal-close {

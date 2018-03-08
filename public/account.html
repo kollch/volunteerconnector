@@ -23,12 +23,18 @@
               <h1 class="site-title">Volunteer Connector</h1>
 			  <nav class="navbar">
     <ul class="navlist">
+	<li class="navitem navlink"><a href="/">Home</a></li>
+      <li class="navitem navlink active"><a href="/account">Account</a></li>
       <li class="navitem navbar-search">
         <input type="text" id="navbar-search-input" placeholder="Search...">
         <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
       </li>
     </ul>
   </nav>
+			<div id="title-search">
+                <button type="button" id="post-button">Post</button>
+                
+            </div>
             </div>
 
     
@@ -80,7 +86,8 @@
 
 
 <!-- below is the modal for a charity to add a new post it will toggle hidden if the account is a organization, and will be hidden if the account is just a volunteer user -->
-    <div id="add-event-modal" class="">
+    <div id="add-event-modal-backdrop" class="hidden"></div>
+    <div id="add-event-modal" class="hidden">
     <div class="modal-dialog">
 
       <div class="modal-header">
@@ -113,7 +120,7 @@
 
         <div class="post-input-element">
           <label for="event-description-input">Short Description</label>
-          <input type="text" id="event-description-input">
+          <textarea rows="5" cols="50" id="event-description-input"></textarea>
         </div>
       </div>
 
@@ -127,6 +134,6 @@
 
   </body>
 
-  <script src="/index.js" charset="utf-8"></script>
+  <script src="/account.js" charset="utf-8"></script>
 
 </html>
