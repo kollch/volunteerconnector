@@ -26,6 +26,7 @@
 
 			  <li class="navitem navlink active"><a href="./index.php">Home</a></li>
       <li class="navitem navlink"><a href="./account.php">Account</a></li>
+	  <li class="navitem navlink"><a href="./about.php">About</a></li>
 
       <li class="navitem navbar-search">
         <input type="text" id="navbar-search-input" placeholder="Search...">
