@@ -1,3 +1,9 @@
+var nameOfEvent = "";
+var locationOfEvent = "";
+var dateOfEvent = "";
+var timeOfEvent = "";
+var eventDescription = "";
+
 function handlepostClick(event){
 	var NewModal = document.getElementById('add-event-modal-backdrop');
 	NewModal.classList.remove('hidden');
@@ -6,6 +12,16 @@ function handlepostClick(event){
 }
 
 function handleCancelPostClick(event){
+	var inputTemp = document.getElementById('event-name-input');
+	inputTemp.value = "";
+	inputTemp = document.getElementById('event-location-input');
+	inputTemp.value = "";
+	inputTemp = document.getElementById('event-date-input');
+	inputTemp.value = "";
+	inputTemp = document.getElementById('event-time-input');
+	inputTemp.value = "";
+	inputTemp = document.getElementById('event-description-input');
+	inputTemp.value = "";
 	var NewModal = document.getElementById('add-event-modal-backdrop');
 	NewModal.classList.add('hidden');
 	var formNewform = document.getElementById('add-event-modal');
