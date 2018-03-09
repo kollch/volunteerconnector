@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+include 'database_creds.php';
+
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+if (mysqli_connect_errno()) {
+  die(mysqli_connect_error());
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
