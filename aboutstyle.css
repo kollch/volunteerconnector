@@ -185,8 +185,8 @@ a:focus {
   max-width: 35%;
   max-height: 35%;
   border-radius: 1%;
-  margin-top: 5%;
-  margin-left: 20%;
+  margin-top: 2.5%;
+  margin-left: 25%;
   float: left;
 
 }
@@ -203,8 +203,8 @@ a:focus {
   height: 300px;
   border-radius: 1%;
   border: 3px solid black;
-  margin-top: 5%;
-  margin-right: 20%;
+  margin-top: 2.5%;
+  margin-right: 25%;
   float: right;
 }
 
@@ -224,9 +224,11 @@ a:focus {
 
 .about-content{
   clear:both;
-  margin-top: 5%;
-  margin-left: 20%;
-  width: 60%;
+  margin-top: 2.5%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  width: 50%;
   border: 3px solid black;
   color: #319df6;
+
 }
