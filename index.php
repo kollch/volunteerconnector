@@ -244,8 +244,7 @@ if (mysqli_connect_errno()) {
     </div>
     <div id="volunteer-register-modal-backdrop" class="hidden"></div>
     <div id="volunteer-register-modal" class="hidden">
-     
-	  <form class="modal-dialog" action="/volunteerregister.php" method="post">
+      <form class="modal-dialog" action="/volunteerregister.php" method="post">
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -262,8 +261,7 @@ if (mysqli_connect_errno()) {
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-		  <input type="submit" class="modal-accept-button" value="Register">
-          
+          <input type="submit" class="modal-accept-button" value="Register">
         </div>
       </form>
     </div>
