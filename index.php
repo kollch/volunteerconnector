@@ -232,7 +232,8 @@
     </div>
     <div id="volunteer-register-modal-backdrop" class="hidden"></div>
     <div id="volunteer-register-modal" class="hidden">
-      <div class="modal-dialog">
+     
+	  <form class="modal-dialog" action="/volunteerregister.php" method="post">
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -249,9 +250,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Register</button>
+		  <input type="submit" class="modal-accept-button" value="Register">
+          
         </div>
-      </div>
+      </form>
     </div>
     <!-- below is the modal for a charity to add a new post it will toggle
          hidden if the account is a organization, and will be hidden if the
