@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
 
-    <meta charset="utf-8">
-    <title>Volunteer Connector</title>
+		<meta charset="utf-8">
+		<title>Volunteer Connector</title>
 
     <!-- This is a stylesheet that includes the font you should use -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 
     <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 
-    <link rel="stylesheet" href="./style.css" media="screen">
+		<link rel="stylesheet" href="./style.css" media="screen">
 
-  </head>
+	</head>
 
-  <body>
-
-      <header>
-          <div id="title-main">
-            <div id="title-searches">
-              <h1 class="site-title">Volunteer Connector</h1>
-			  			  <nav class="navbar">
-			  <ul class="navlist">
-
-			  <li class="navitem navlink active"><a href="./index.php">Home</a></li>
-      <li class="navitem navlink"><a href="./account.php">Account</a></li>
-	  <li class="navitem navlink"><a href="./about.php">About</a></li>
-
-      <li class="navitem navbar-search">
-        <input type="text" id="navbar-search-input" placeholder="Search...">
-        <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-      </li>
-    </ul>
-  </nav>
-            </div>
-
-            <div id="title-search">
-
-                <button type="button" id="signin-button">Login</button>
-                <button type="button" id="register-button">Register</button>
-            </div>
-          </div>
+	<body>
+		<header>
+			<div id="title-main">
+				<div id="title-searches">
+					<h1 class="site-title">Volunteer Connector</h1>
+			  			 <nav class="navbar">
+							<ul class="navlist">
+								<li class="navitem navlink active"><a href="./index.php">Home</a></li>
+								<li class="navitem navlink"><a href="./account.php">Account</a></li>
+								<li class="navitem navlink"><a href="./about.php">About</a></li>
+								<li class="navitem navbar-search">
+									<input type="text" id="navbar-search-input" placeholder="Search...">
+									<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+								</li>
+							</ul>
+						</nav>
+				</div>
+				<div id="title-search">
+					<button type="button" id="signin-button">Login</button>
+					<button type="button" id="register-button">Register</button>
+				</div>
+			</div>
         </header>
 
     <main>
       <!-- volunteer oppurtunites header -->
         <div class="posts-header">
-          <div>
-            <a href="#" class="posts-link"> VOLUNTEER OPPORTUNITES </a>
+			<div>
+				<a href="#" class="posts-link"> VOLUNTEER OPPORTUNITES </a>
             <!-- the link in this href should link to just the posts page -->
-          </div>
+			</div>
         </div>
 <!-- my goal is to have these these posts inserted dynamically based on the posts in the database using handlebars but at the moment
 these posts serve as an example of what a posts should like, and what the posts feed should look like - coulby nguyen -->
         <!-- example post -->
         <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
-        <div class="eventContainer">
-          <div class="eventDetails">
-            <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+			<div class="eventContainer">
+				<div class="eventDetails">
+					<a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
-          </div>
-          <div class="eventDescription">
-              <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
-          </div>
-        </div>
-      </div>
+				</div>
+				<div class="eventDescription">
+					<p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+				</div>
+			</div>
+		</div>
 
 <!-- example post2 -->
-      <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
-      <div class="eventContainer">
-        <div class="eventDetails">
-          <a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
+		<div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
+			<div class="eventContainer">
+				<div class="eventDetails">
+					<a href="#" class="eventTitle"> Volunteer at HOOPLA </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> Salem Captitol</span>
           <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
-        </div>
-        <div class="eventDescription">
-            <p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
-        </div>
-      </div>
-    </div>
+				</div>
+				<div class="eventDescription">
+					<p href="#" class="shortDescription">COME JOIN US AT OUR 20th ANNIVERSARY OF HOOPLA</p>
+				</div>
+			</div>
+		</div>
 
     <!-- example post3 -->
     <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
