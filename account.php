@@ -25,8 +25,11 @@
     <ul class="navlist">
 
 	<li class="navitem navlink"><a href="./index.php">Home</a></li>
+  <!-- change the linke of the address above to the root i.e. "/"-->
       <li class="navitem navlink active"><a href="./account.php">Account</a></li>
+      <!-- change the address of this link to just ./account the php is not the correct location of that page -->
 	  <li class="navitem navlink"><a href="./about.php">About</a></li>
+      <!-- change the address of this link to just ./account the .php is not the correct location of that page -->
       <li class="navitem navbar-search">
         <input type="text" id="navbar-search-input" placeholder="Search...">
         <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
@@ -36,11 +39,11 @@
 
 			<div id="title-search">
                 <button type="button" id="post-button">Post</button>
-                
+
             </div>
             </div>
 			</div>
-    
+
         </header>
 
     <main>

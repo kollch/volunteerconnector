@@ -21,12 +21,15 @@
 				<div id="title-searches">
 					<h1 class="site-title">Volunteer Connector<button type="button" id="signin-button">Login</button>
 					<button type="button" id="register-button">Register</button></h1>
-					
+
 			  			 <nav class="navbar">
 							<ul class="navlist">
 								<li class="navitem navlink active"><a href="./index.php">Home</a></li>
+								<!-- change this link to just "/" in order to get back to the root page -->
 								<li class="navitem navlink"><a href="./account.php">Account</a></li>
+								<!-- change this link to just "./account" take off the php in order to get to the right page -->
 								<li class="navitem navlink"><a href="./about.php">About</a></li>
+								<!-- change this link to just "./account" take off the php in order to get to the right page -->
 								<li class="navitem navbar-search">
 									<input type="text" id="navbar-search-input" placeholder="Search...">
 									<button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
@@ -34,7 +37,7 @@
 							</ul>
 						</nav>
 				</div>
-				
+
 			</div>
         </header>
 
