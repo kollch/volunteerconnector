@@ -19,7 +19,9 @@
 		<header>
 			<div id="title-main">
 				<div id="title-searches">
-					<h1 class="site-title">Volunteer Connector</h1>
+					<h1 class="site-title">Volunteer Connector<button type="button" id="signin-button">Login</button>
+					<button type="button" id="register-button">Register</button></h1>
+					
 			  			 <nav class="navbar">
 							<ul class="navlist">
 								<li class="navitem navlink active"><a href="./index.php">Home</a></li>
@@ -32,10 +34,7 @@
 							</ul>
 						</nav>
 				</div>
-				<div id="title-search">
-					<button type="button" id="signin-button">Login</button>
-					<button type="button" id="register-button">Register</button>
-				</div>
+				
 			</div>
         </header>
 
