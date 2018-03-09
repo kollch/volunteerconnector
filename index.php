@@ -166,7 +166,7 @@ if (mysqli_connect_errno()) {
     </main>
     <div id="login-modal-backdrop" class="hidden"></div>
     <div id="login-modal" class="hidden">
-      <div class="modal-dialog">
+      <form class="modal-dialog" action="/login.php" method="post">
         <div class="modal-header">
           <h3>Login</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -183,10 +183,11 @@ if (mysqli_connect_errno()) {
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Login</button>
+          <input type="submit" class="modal-accept-button" value="Login">
         </div>
-      </div>
+      </form>
     </div>
+    
     <div id="register-modal-backdrop" class="hidden"></div>
     <div id="register-modal" class="hidden">
       <div class="modal-dialog">
@@ -208,7 +209,7 @@ if (mysqli_connect_errno()) {
     </div>
     <div id="charity-register-modal-backdrop" class="hidden"></div>
     <div id="charity-register-modal" class="hidden">
-      <div class="modal-dialog">
+      <form class="modal-dialog" action="/charityregister.php" method="post">
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -232,14 +233,14 @@ if (mysqli_connect_errno()) {
           </div>
           <div class="form-input-element">
             <label for="charity-description-input">Charity Description</label>
-            <textarea id="charity-description-input"></textarea>
+            <input type="text" id="charity-description-input">
           </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Register</button>
+          <input type="submit" class="modal-accept-button" value="Register">
         </div>
-      </div>
+      </form>
     </div>
     <div id="volunteer-register-modal-backdrop" class="hidden"></div>
     <div id="volunteer-register-modal" class="hidden">
@@ -270,7 +271,7 @@ if (mysqli_connect_errno()) {
     <div id="add-event-modal-backdrop" class="hidden"></div>
     <div id="add-event-modal" class="hidden">
       <div id="add-event-modal" class="">
-        <div class="modal-dialog">
+        <form class="modal-dialog" action="/post.php" method="post">
           <div class="modal-header">
             <h3>Post New Opportunity</h3>
             <!-- <button type="button" id="modal-close" class="modal-hide-button">&times;</button> -->
@@ -301,9 +302,9 @@ if (mysqli_connect_errno()) {
           <div class="modal-footer">
             <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
             <!-- cancel button should clear out all the fields -->
-            <button type="button" id="modal-accept" class="action-button">Create Post</button>
+            <input type="submit" class="modal-accept-button" value="Post">
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </body>
