@@ -41,6 +41,12 @@
 
   <!-- below is the organiztion info/name/pic container -->
 
+  <div class="event-title-container">
+    <div class="event-title-box">
+      <h1>HOOPLA VOLUNTEERS POST#1<h1>
+    </div>
+  </div>
+
   <div class="organiztion-container">
     <div class="organiztion-box">
       <h1> EXAMPLE ORGANIZATION </h1>

@@ -180,6 +180,22 @@ a:focus {
   outline: none;
 }
 
+.event-title-container{
+  clear:both;
+}
+
+.event-title-box{
+  clear:both;
+  margin-top: 2.5%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  width: 50%;
+  border: 3px solid black;
+  color: #319df6;
+
+}
+
+
 .organiztion-container{
   /* background-color: #000000; */
   /* max-width: 35%; */
