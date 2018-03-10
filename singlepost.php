@@ -43,7 +43,7 @@
 
   <div class="event-title-container">
     <div class="event-title-box">
-      <h1>HOOPLA VOLUNTEERS POST#1<h1>
+      <h1>HOOPLA VOLUNTEERS POST#1</h1>
     </div>
   </div>
 
