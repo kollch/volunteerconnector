@@ -182,17 +182,19 @@ a:focus {
 
 .event-title-container{
   clear:both;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 .event-title-box{
   clear:both;
   margin-top: 2.5%;
   margin-left: 25%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
   width: 50%;
   border: 3px solid black;
-  color: #319df6;
+  text-align: center;
+  /* color: #319df6; */
+  color: #000000;
 
 }
 
@@ -220,7 +222,8 @@ a:focus {
 }
 
 .event-details-container{
-  color: #319df6;
+  /* color: #319df6; */
+  color: #000000;
   width: 300px;
   height: 300px;
   border-radius: 1%;
@@ -241,17 +244,23 @@ a:focus {
   clear:both;
 }
 
-.about-content-container{
-  clear:both;
-}
-
-.about-content{
+.event-description-container{
   clear:both;
   margin-top: 2.5%;
   margin-left: 25%;
   margin-bottom: 5%;
   width: 50%;
   border: 3px solid black;
-  color: #319df6;
+}
 
+.event-description-box{
+  clear:both;
+  /* margin-top: 2.5%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  width: 50%; */
+  /* border: 3px solid black; */
+  /* color: #319df6; */
+  color: #000000;
+  margin: 3%;
 }

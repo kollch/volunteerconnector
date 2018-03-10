@@ -30,7 +30,7 @@
   <!-- change the linke of the address above to the root i.e. "/"-->
       <li class="navitem navlink"><a href="./account.php">Account</a></li>
       <!-- change the address of this link to just ./account the php is not the correct location of that page -->
-	  <li class="navitem navlink active"><a href="./about.php">About</a></li>
+	  <li class="navitem navlink"><a href="./about.php">About</a></li>
       <!-- change the address of this link to just ./account the .php is not the correct location of that page -->
       <li class="navitem navbar-search">
         <input type="text" id="navbar-search-input" placeholder="Search...">
@@ -70,5 +70,10 @@
 
   <div class="event-description-container">
     <div class="event-description-box">
+      <p>Hoopla presented by Columbia Bank & Dutch Bros. is the premier 3-on-3 street basketball event in Oregon, and it is believed to be the 2nd largest event of its kind in the United States.</p>
+      <p>The special 20th edition of Hoopla will be held August 4th & 5th in 2018, and upwards of 1,000 teams, 4,000 participants, 900 volunteers and thousands of spectators are anticipated.</p>
+      <p>Participants young and old, male and female, and of all skill levels compete in the shadows of the Oregon State Capitol Building in Salem. Some play in one favorite division, others play on multiple teams in several divisions, enhancing their HATER (Hoopa All-Time Efficiency Rating).</p>
+      <p>Friends, family, fun, and ball. It's all good.</p>
+      <p>We hope you will join us at the grand-daddy of all Oregon 3-on-3 events this August!</p>
     </div>
   </div>
