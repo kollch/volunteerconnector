@@ -180,24 +180,29 @@ a:focus {
   outline: none;
 }
 
-.osuphoto-container{
-  background-color: #000000;
-  max-width: 35%;
-  max-height: 35%;
+.organiztion-container{
+  /* background-color: #000000; */
+  /* max-width: 35%; */
+  /* max-height: 35%; */
   border-radius: 1%;
   margin-top: 2.5%;
   margin-left: 25%;
   float: left;
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
 
 }
 
-.osuphoto{
-    border: 3px solid black;
+.organiztion-box{
+    /* border: 3px solid black;
     width:300px;
-    height:300px;
+    height:300px; */
+    margin-left: 5%;
+    margin-top: 40%;
 }
 
-.about-container{
+.event-details-container{
   color: #319df6;
   width: 300px;
   height: 300px;
@@ -208,10 +213,11 @@ a:focus {
   float: right;
 }
 
-.about{
-  font-size: 50px;
-  margin-top: 40%;
-  margin-left:20%;
+.event-details-box{
+  font-size: 20px;
+  margin-top: 20%;
+  margin-left:10%;
+  /* align-items: center; */
 }
 
 .spacejam{

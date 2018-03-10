@@ -13,7 +13,7 @@
     <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 
-    <link rel="stylesheet" href="./aboutstyle.css" media="screen">
+    <link rel="stylesheet" href="./singlepoststyle.css" media="screen">
 
   </head>
 
@@ -39,27 +39,30 @@
     </ul>
   </nav>
 
+  <!-- below is the organiztion info/name/pic container -->
 
-  <div class="osuphoto-container">
-    <div class="osuphoto">
-      <img src="./oregonstatelogo.jpg">
+  <div class="organiztion-container">
+    <div class="organiztion-box">
+      <h1> EXAMPLE ORGANIZATION </h1>
     </div>
   </div>
 
-  <div class="about-container">
-    <div class="about">
-      <p>ABOUT</p>
+  <div class="event-details-container">
+    <div class="event-details-box">
+      <p><b>TIME:</b> 13:00</p>
+      <p><b>DATE:</b> 08/12/2017</p>
+      <p><b>LOCATION:</b> Salem Captiol</p>
+      <p><b># OF VOLUNTEERS:</b> 100</p>
     </div>
   </div>
+
   <div class="spacejam">
     <!-- this div provides space  -->
   </div>
-  <div class="about-content-container">
-    <div class="about-content">
-      <h3> This Is Our CS361 Class Project </h3>
-      <h4> Our Project Goal Is To Connect Volunteer To Charity Organizations</h4>
-      <h4> Our Project Members : Charles Koll, Pavell Shonka, Daniel Domme, Coulby Thanh-Simon Nguyen, and Pedro de Faria Autran e Morais</h4>
+
+  <!-- below here should be the event description  -->
+
+  <div class="event-description-container">
+    <div class="event-description-box">
     </div>
   </div>
-
-</body>
