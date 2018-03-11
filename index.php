@@ -225,25 +225,21 @@ if (mysqli_connect_errno()) {
         </div>
         <div class="modal-body">
           <div class="form-input-element">
-            <label for="charity-username-input">Username</label>
-            <input type="text" id="charity-username-input">
+            <label for="charity-name-input">Charity Name</label>
+            <input type="text" id="charity-name-input">
           </div>
           <div class="form-input-element">
             <label for="charity-password-input">Password</label>
             <input type="text" id="charity-password-input">
           </div>
-          <div class="form-input-element">
-            <label for="charity-name-input">Charity Name</label>
-            <input type="text" id="charity-name-input">
-          </div>
-          <div class="form-input-element">
-            <label for="charity-location-input">Location</label>
-            <input type="text" id="charity-location-input">
-          </div>
-          <div class="form-input-element">
+		  <div class="form-input-element">
             <label for="charity-description-input">Charity Description</label>
             <input type="text" id="charity-description-input">
           </div>
+          <div class="form-input-element">
+            <label for="charity-logo-input">Logo URL</label>
+            <input type="text" id="charity-logo-input">
+          </div>          
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>

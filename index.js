@@ -67,7 +67,7 @@ var	searchTextTemp = "";
 var registerUserName = "";
 var registerPassword = "";
 var charityName = "";
-var charityLocation = "";
+var charityLogo = "";
 var charityDescription = "";
 var loginUserName = "";
 var loginPassword = "";
@@ -101,10 +101,6 @@ function handleVolunteerRegisterPasswordInput(event){
 	registerPassword = event.target.value;
 }
 
-function handleCharityRegisterUsernameInput(event){
-	registerUserName = event.target.value;
-}
-
 function handleCharityRegisterPasswordInput(event){
 	registerPassword = event.target.value;
 }
@@ -113,8 +109,8 @@ function handleCharityRegisterNameInput(event){
 	charityName = event.target.value;
 }
 
-function handleCharityLocationInput (event){
-	charityLocation = event.target.value;
+function handleCharityLogoInput (event){
+	charityLogo = event.target.value;
 }
 
 function handleCharityDescriptionInput(event){
@@ -195,11 +191,9 @@ function handleCancelRegisterClick(event){
 }
 
 function handleCancelCharityRegisterClick(event){
-	var inputTemp = document.getElementById('charity-username-input');
+	var inputTemp = document.getElementById('charity-password-input');
 	inputTemp.value = "";
-	inputTemp = document.getElementById('charity-password-input');
-	inputTemp.value = "";
-	inputTemp = document.getElementById('charity-location-input');
+	inputTemp = document.getElementById('charity-logo-input');
 	inputTemp.value = "";
 	inputTemp = document.getElementById('charity-description-input');
 	inputTemp.value = "";
@@ -254,17 +248,14 @@ volunteerRegisterUsernameTextInput.addEventListener('input', handleVolunteerRegi
 var volunteerRegisterPasswordTextInput = document.getElementById('volunteer-password-input');
 volunteerRegisterPasswordTextInput.addEventListener('input', handleVolunteerRegisterPasswordInput);
 
-var charityRegisterUsernameTextInput = document.getElementById('charity-username-input');
-charityRegisterUsernameTextInput.addEventListener('input', handleCharityRegisterUsernameInput);
-
 var charityRegisterPasswordTextInput = document.getElementById('charity-password-input');
 charityRegisterPasswordTextInput.addEventListener('input', handleCharityRegisterPasswordInput);
 
 var charityRegisterCharityNameTextInput = document.getElementById('charity-name-input');
 charityRegisterCharityNameTextInput.addEventListener('input', handleCharityRegisterNameInput);
 
-var charityRegisterLocationTextInput = document.getElementById('charity-location-input');
-charityRegisterLocationTextInput.addEventListener('input', handleCharityLocationInput);
+var charityRegisterLogoTextInput = document.getElementById('charity-logo-input');
+charityRegisterLogoTextInput.addEventListener('input', handleCharityLogoInput);
 
 var charityRegisterDescriptionTextInput = document.getElementById('charity-description-input');
 charityRegisterDescriptionTextInput.addEventListener('input', handleCharityDescriptionInput);
