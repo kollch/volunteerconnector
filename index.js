@@ -1,3 +1,30 @@
+// cache all of the events
+var event_cache = [].slice.call(document.getElementsByClassName("event"));
+
+
+function handleSearch(event)
+{
+	var searchString = document.getElementById("navbar-search-input").value.toLowerCase();
+
+	var main = document.querySelector("main");
+	var header = document.getElementsByClassName("posts-header")[0];
+
+	matches = []
+	// loop through all the cached events and push it if it contains the substring
+	for (var event of event_cache)
+		if (event.textContent.toLowerCase().indexOf(searchString) >= 0)
+			matches.push(event);
+		
+	// remove all contents of main
+	main.innerHTML = "";
+	// readd the header
+	main.appendChild(header);
+
+	// add the elements that matched the search query
+	for (var event of matches)
+		main.appendChild(event);
+}
+
 function handlesigninClick(event){
 	var NewModal = document.getElementById('login-modal-backdrop');
 	NewModal.classList.remove('hidden');
@@ -295,4 +322,12 @@ for	(var i = 0; i < volunteerRegisterModalExClick.length; i++){
 var volunteerRegisterCancelClick = document.getElementsByClassName('modal-cancel-button');
 for (var i = 0; i < volunteerRegisterCancelClick.length; i++) {
 	volunteerRegisterCancelClick[i].addEventListener('click', handleCancelVolunteerRegisterClick);
+}
+
+var searchButton = document.getElementById('navbar-search-button');
+searchButton.addEventListener('click', handleSearch);
+
+document.getElementById('navbar-search-input').onkeypress = function (e) {
+	if (e.keyCode == '13')
+		handleSearch();
 }
