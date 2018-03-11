@@ -59,7 +59,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -72,7 +72,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -85,7 +85,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -98,7 +98,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -111,7 +111,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -124,7 +124,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -137,7 +137,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -150,7 +150,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -163,7 +163,7 @@ if (mysqli_connect_errno()) {
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
-	    <a href="#" class="eventTitle">Volunteer at HOOPLA</a><br>
+	    <a href="./singlepost.php" class="eventTitle">Volunteer at HOOPLA</a><br>
             <span class="date">08/12/2017</span> <span class="time">13:00</span> <span class="location">Salem Capitol</span>
             <!-- this a href above should link to the solo post page where the user can get more detail and actually register -->
           </div>
@@ -196,7 +196,7 @@ if (mysqli_connect_errno()) {
         </div>
       </form>
     </div>
-    
+
     <div id="register-modal-backdrop" class="hidden"></div>
     <div id="register-modal" class="hidden">
       <div class="modal-dialog">

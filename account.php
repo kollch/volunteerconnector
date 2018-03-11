@@ -50,28 +50,28 @@ if (mysqli_connect_errno()) {
         <div class="mypostsheader event">
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="#" class="eventTitle">MY POSTS </a>
+              <a href="./singlepost.php" class="eventTitle">MY POSTS </a>
             </div>
           </div>
         </div>
         <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="#" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
+              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
             </div>
           </div>
         </div>
         <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="#" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
+              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
             </div>
           </div>
         </div>
         <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="#" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
+              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
             </div>
           </div>
         </div>
