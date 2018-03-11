@@ -78,12 +78,13 @@ if (mysqli_connect_errno()) {
       </section>
     </main>
 
-<!-- below is the modal for a charity to add a new post it will toggle hidden if the account is a organization, and will be hidden if the account is just a volunteer user -->
-
+ <!-- below is the modal for a charity to add a new post it will toggle
+         hidden if the account is a organization, and will be hidden if the
+         account is just a volunteer user -->
     <div id="add-event-modal-backdrop" class="hidden"></div>
     <div id="add-event-modal" class="hidden">
       <div id="add-event-modal" class="">
-        <div class="modal-dialog">
+        <form class="modal-dialog" action="/post.php" method="post">
           <div class="modal-header">
             <h3>Post New Opportunity</h3>
             <!-- <button type="button" id="modal-close" class="modal-hide-button">&times;</button> -->
@@ -108,15 +109,15 @@ if (mysqli_connect_errno()) {
             </div>
             <div class="post-input-element">
               <label for="event-description-input">Short Description</label>
-              <textarea rows="5" cols="50" id="event-description-input"></textarea>
+              <input type="text" id="event-description-input">
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" id="modal-cancel" class="modal-hide-button action-button">Cancel</button>
             <!-- cancel button should clear out all the fields -->
-            <button type="button" id="modal-accept" class="action-button">Create Post</button>
+            <input type="submit" class="modal-accept-button" value="Post">
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </body>
