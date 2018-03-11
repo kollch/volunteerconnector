@@ -58,7 +58,7 @@
       <p><b>TIME:</b> 13:00</p>
       <p><b>DATE:</b> 08/12/2017</p>
       <p><b>LOCATION:</b> Salem Captiol</p>
-      <p><b># OF VOLUNTEERS:</b> 100</p>
+      <!-- <p><b># OF VOLUNTEERS:</b> 100</p> -->
     </div>
   </div>
 
