@@ -220,15 +220,15 @@ a:focus {
 
 .about-content-container{
   clear:both;
-}
-
-.about-content{
-  clear:both;
+  border: 3px solid black;
   margin-top: 2.5%;
   margin-left: 25%;
   margin-bottom: 5%;
   width: 50%;
-  border: 3px solid black;
-  color: #319df6;
+}
 
+.about-content{
+  clear:both;
+  margin: 30px;
+  color: #319df6;
 }

@@ -49,7 +49,7 @@
 
   <div class="organiztion-container">
     <div class="organiztion-box">
-      <h1> EXAMPLE ORGANIZATION </h1>
+      <h1> Columbia Bank & Dutch Bros. </h1>
     </div>
   </div>
 
