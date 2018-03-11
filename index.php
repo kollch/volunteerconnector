@@ -183,11 +183,11 @@ if (mysqli_connect_errno()) {
         <div class="modal-body">
           <div class="form-input-element">
             <label for="username-input">Username</label>
-            <input type="text" id="username-input">
+            <input type="text" id="username-input" required>
           </div>
           <div class="form-input-element">
             <label for="password-input">Password</label>
-            <input type="text" id="password-input">
+            <input type="text" id="password-input" required>
           </div>
         </div>
         <div class="modal-footer">
@@ -226,19 +226,19 @@ if (mysqli_connect_errno()) {
         <div class="modal-body">
           <div class="form-input-element">
             <label for="charity-name-input">Charity Name</label>
-            <input type="text" id="charity-name-input">
+            <input type="text" id="charity-name-input" maxlength="62" required>
           </div>
           <div class="form-input-element">
             <label for="charity-password-input">Password</label>
-            <input type="text" id="charity-password-input">
+            <input type="text" id="charity-password-input" maxlength="510" required>
           </div>
 		  <div class="form-input-element">
             <label for="charity-description-input">Charity Description</label>
-            <input type="text" id="charity-description-input">
+            <input type="text" id="charity-description-input" maxlength="510">
           </div>
           <div class="form-input-element">
             <label for="charity-logo-input">Logo URL</label>
-            <input type="text" id="charity-logo-input">
+            <input type="text" id="charity-logo-input" maxlength="510">
           </div>          
         </div>
         <div class="modal-footer">
@@ -257,11 +257,11 @@ if (mysqli_connect_errno()) {
         <div class="modal-body">
           <div class="form-input-element">
             <label for="volunteer-username-input">Username</label>
-            <input type="text" id="volunteer-username-input">
+            <input type="text" id="volunteer-username-input" maxlength="30" required>
           </div>
           <div class="form-input-element">
             <label for="volunteer-password-input">Password</label>
-            <input type="text" id="volunteer-password-input">
+            <input type="text" id="volunteer-password-input" maxlength="510" required>
           </div>
         </div>
         <div class="modal-footer">
