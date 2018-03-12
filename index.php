@@ -215,7 +215,6 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Register</button>
         </div>
       </div>
     </div>
