@@ -178,7 +178,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
     </main>
     <div id="login-modal-backdrop" class="hidden"></div>
     <div id="login-modal" class="hidden">
-      <form class="modal-dialog" action="/login.php" method="post">
+      <form class="modal-dialog" action="./login.php" method="post">
         <div class="modal-header">
           <h3>Login</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -221,7 +221,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
     </div>
     <div id="charity-register-modal-backdrop" class="hidden"></div>
     <div id="charity-register-modal" class="hidden">
-      <form class="modal-dialog" action="/charityregister.php" method="post">
+      <form class="modal-dialog" action="./charityregister.php" method="post">
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -252,7 +252,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
     </div>
     <div id="volunteer-register-modal-backdrop" class="hidden"></div>
     <div id="volunteer-register-modal" class="hidden">
-      <form class="modal-dialog" action="/volunteerregister.php" method="post">
+      <form class="modal-dialog" action="./volunteerregister.php" method="post">
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -279,7 +279,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
     <div id="add-event-modal-backdrop" class="hidden"></div>
     <div id="add-event-modal" class="hidden">
       <div id="add-event-modal" class="">
-        <form class="modal-dialog" action="/post.php" method="post">
+        <form class="modal-dialog" action="./post.php" method="post">
           <div class="modal-header">
             <h3>Post New Opportunity</h3>
             <!-- <button type="button" id="modal-close" class="modal-hide-button">&times;</button> -->
