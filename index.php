@@ -36,14 +36,11 @@ if (isset($_SESSION['username'])) { ?>
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink active"><a href="./index.php">Home</a></li>
-              <!-- change this link to just "/" in order to get back to the root page -->
 <?php
 if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
               <li class="navitem navlink"><a href="./account.php">Account</a></li>
-	      <!-- change this link to just "./account" take off the php in order to get to the right page -->
 <?php } ?>
               <li class="navitem navlink"><a href="./about.php">About</a></li>
-              <!-- change this link to just "./account" take off the php in order to get to the right page -->
               <li class="navitem navbar-search">
                 <input type="text" id="navbar-search-input" placeholder="Search...">
                 <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
