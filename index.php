@@ -19,6 +19,7 @@ if (mysqli_connect_errno()) {
     <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="./style.css" media="screen">
+    <script src="./index.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
@@ -58,11 +59,32 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
           <!-- the link in this href should link to just the posts page -->
         </div>
       </div>
-      <!-- my goal is to have these these posts inserted dynamically based on
-           the posts in the database using handlebars but at the moment these
-           posts serve as an example of what a posts should like, and what the
-           posts feed should look like - coulby nguyen -->
-      <!-- example post -->zz
+<?php
+$sql = "SELECT title, location, date, description, name FROM Post ORDER BY date ASC";
+$result = mysqli_query($conn, $sql);
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+  $date = date('Y-m-d', strtotime($row["date"]));
+  $time = date('H:i', strtotime($timestamp));
+
+  echo '<div class="event" data-location="' . $row["location"] . '" data-date="' . $date . '" data-time="' . $time . '">'; ?>
+        <div class="eventContainer">
+	  <div class="eventDetails">
+<?php
+  echo '<a href="./singlepost.php?title=' . urlencode($row["title"]) . '" class="eventTitle">' . $row["title"] . '</a><br />';
+  echo '<span class="date">' . $date . '</span> <span class="time">' . $time . '</span> <span class="location">' . $row["location"] . '</span>';
+?>
+          </div>
+          <div class="eventDescription">
+<?php
+  echo '<p class="shortDescription">' . $row["description"] . '</p>'; ?>
+          </div>
+        </div>
+      </div>
+<?php
+}
+mysqli_free_result($result);
+?>
+      <!-- example post -->
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
@@ -245,7 +267,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
           <div class="form-input-element">
             <label for="charity-logo-input">Logo URL</label>
             <input type="text" id="charity-logo-input" name="charity-logo-input" maxlength="510">
-          </div>
+          </div>          
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
@@ -319,5 +341,4 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
       </div>
     </div>
   </body>
-  <script src="./index.js" charset="utf-8"></script>
 </html>
