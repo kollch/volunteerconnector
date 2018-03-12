@@ -222,6 +222,15 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
     <div id="charity-register-modal-backdrop" class="hidden"></div>
     <div id="charity-register-modal" class="hidden">
       <form class="modal-dialog" action="./charityregister.php" method="post">
+<!--        <label for="charity-name-input">Charity Name</label>
+        <input type="text" id="charity-name-input" name="charity-name-input" maxlength="62" required>
+        <label for="charity-password-input">Password</label>
+        <input type="text" id="charity-password-input" name="charity-password-input" maxlength="510" required>
+        <label for="charity-description-input">Charity Description</label>
+        <input type="text" id="charity-description-input" name="charity-description-input" maxlength="510">
+        <label for="charity-logo-input">Logo URL</label>
+        <input type="text" id="charity-logo-input" name="charity-logo-input" maxlength="510">
+        <input type="submit" class="modal-accept-button" value="Register"> -->
         <div class="modal-header">
           <h3>Register</h3>
           <button type="button" class="modal-close-button">&times;</button>
@@ -235,7 +244,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
             <label for="charity-password-input">Password</label>
             <input type="text" id="charity-password-input" name="charity-password-input" maxlength="510" required>
           </div>
-		  <div class="form-input-element">
+          <div class="form-input-element">
             <label for="charity-description-input">Charity Description</label>
             <input type="text" id="charity-description-input" name="charity-description-input" maxlength="510">
           </div>

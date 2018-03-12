@@ -13,7 +13,7 @@ $password = mysqli_real_escape_string($conn, $_POST['charity-password-input']);
 $description = mysqli_real_escape_string($conn, $_POST['charity-description-input']);
 $logo = mysqli_real_escape_string($conn, $_POST['charity-logo-input']);
 
-$sql = "INSERT INTO UserAccount (name, password";
+$sql = "INSERT INTO Charity (name, password";
 if (!empty($description)) {
   $sql .= ", description";
 }

@@ -67,8 +67,9 @@ var	searchTextTemp = "";
 var registerUserName = "";
 var registerPassword = "";
 var charityName = "";
-var charityLogo = "";
+var charityPassword = "";
 var charityDescription = "";
+var charityLogo = "";
 var loginUserName = "";
 var loginPassword = "";
 
@@ -101,20 +102,20 @@ function handleVolunteerRegisterPasswordInput(event){
 	registerPassword = event.target.value;
 }
 
-function handleCharityRegisterPasswordInput(event){
-	registerPassword = event.target.value;
-}
-
 function handleCharityRegisterNameInput(event){
 	charityName = event.target.value;
 }
 
-function handleCharityLogoInput (event){
-	charityLogo = event.target.value;
+function handleCharityRegisterPasswordInput(event){
+	charityPassword = event.target.value;
 }
 
 function handleCharityDescriptionInput(event){
 	charityDescription = event.target.value;
+}
+
+function handleCharityLogoInput (event){
+	charityLogo = event.target.value;
 }
 
 /*function handleSubmitClick(event){
@@ -199,11 +200,10 @@ function handleCancelCharityRegisterClick(event){
 	inputTemp.value = "";
 	inputTemp = document.getElementById('charity-name-input');
 	inputTemp.value = "";
-	registerUserName = "";
-	registerPassword = "";
-	charityLocation = "";
-	charityDescription = "";
 	charityName = "";
+	charityPassword = "";
+	charityDescription = "";
+	charityLogo = "";
 	var NewModal = document.getElementById('charity-register-modal-backdrop');
 	NewModal.classList.add('hidden');
 	var userForm = document.getElementById('charity-register-modal');
