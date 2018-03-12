@@ -13,12 +13,20 @@ $password = mysqli_real_escape_string($conn, $_POST['charity-password-input']);
 $description = mysqli_real_escape_string($conn, $_POST['charity-description-input']);
 $logo = mysqli_real_escape_string($conn, $_POST['charity-logo-input']);
 
-$sql = "INSERT INTO UserAccount VALUES ('" . $username . "', '" . $password . "', '" . $name . "');";
+$sql = "INSERT INTO UserAccount VALUES ('" . $name . "', '" . $password;
+if (!empty($description)) {
+  $sql .= "', '" . $description;
+}
+if (!empty($logo)) {
+  $sql .= "', '" . $logo;
+}
+$sql .= "');";
+
 if (!mysqli_query($conn, $sql)) {
   die("Failed to create your account. Please try again or contact an administrator.");
 }
 mysqli_close($conn);
-$_SESSION['username'] = $username;
+$_SESSION['username'] = $name;
 $_SESSION['is_charity'] = 0;
 header('Location: index.php');
 ?>
