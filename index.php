@@ -24,8 +24,15 @@ if (mysqli_connect_errno()) {
     <header>
       <div id="title-main">
         <div id="title-searches">
-          <h1 class="site-title">Volunteer Connector<button type="button" id="signin-button">Login</button>
-          <button type="button" id="register-button">Register</button></h1>
+	  <h1 class="site-title">Volunteer Connector
+<?php
+if (isset($_SESSION['username'])) { ?>
+	    <button type="button" id="signin-button">Login</button>
+<?php
+} else { ?>
+            <a href="./logout.php" id="signout">Logout</a>
+<?php } ?>
+            <button type="button" id="register-button">Register</button></h1>
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink active"><a href="./index.php">Home</a></li>
