@@ -5,5 +5,5 @@ if (isset($_SESSION['username'])) {
     unset($_SESSION['username']);
 }
 session_destroy();
-header('Location: account.php');
+header('Location: index.php');
 ?>
