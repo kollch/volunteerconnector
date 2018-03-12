@@ -186,11 +186,11 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
         <div class="modal-body">
           <div class="form-input-element">
             <label for="username-input">Username</label>
-            <input type="text" id="username-input" required>
+            <input type="text" id="username-input" name="username-input" required>
           </div>
           <div class="form-input-element">
             <label for="password-input">Password</label>
-            <input type="text" id="password-input" required>
+            <input type="text" id="password-input" name="password-input" required>
           </div>
         </div>
         <div class="modal-footer">
@@ -229,19 +229,19 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
         <div class="modal-body">
           <div class="form-input-element">
             <label for="charity-name-input">Charity Name</label>
-            <input type="text" id="charity-name-input" maxlength="62" required>
+            <input type="text" id="charity-name-input" name="charity-name-input" maxlength="62" required>
           </div>
           <div class="form-input-element">
             <label for="charity-password-input">Password</label>
-            <input type="text" id="charity-password-input" maxlength="510" required>
+            <input type="text" id="charity-password-input" name="charity-password-input" maxlength="510" required>
           </div>
 		  <div class="form-input-element">
             <label for="charity-description-input">Charity Description</label>
-            <input type="text" id="charity-description-input" maxlength="510">
+            <input type="text" id="charity-description-input" name="charity-description-input" maxlength="510">
           </div>
           <div class="form-input-element">
             <label for="charity-logo-input">Logo URL</label>
-            <input type="text" id="charity-logo-input" maxlength="510">
+            <input type="text" id="charity-logo-input" name="charity-logo-input" maxlength="510">
           </div>          
         </div>
         <div class="modal-footer">
@@ -260,11 +260,11 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
         <div class="modal-body">
           <div class="form-input-element">
             <label for="volunteer-username-input">Username</label>
-            <input type="text" id="volunteer-username-input" maxlength="30" required>
+            <input type="text" id="volunteer-username-input" name="volunteer-username-input" maxlength="30" required>
           </div>
           <div class="form-input-element">
             <label for="volunteer-password-input">Password</label>
-            <input type="text" id="volunteer-password-input" maxlength="510" required>
+            <input type="text" id="volunteer-password-input" name="volunteer-password-input" maxlength="510" required>
           </div>
         </div>
         <div class="modal-footer">
@@ -288,23 +288,23 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
           <div class="modal-body">
             <div class="post-input-element">
               <label for="event-name-input">Name Of Event</label>
-              <input type="text" id="event-name-input"></input>
+              <input type="text" id="event-name-input" name="event-name-input">
             </div>
             <div class="post-input-element">
               <label for="event-location-input">Location Of Event</label>
-              <input type="text" id="event-location-input"></input>
+              <input type="text" id="event-location-input" name="event-location-input">
             </div>
             <div class="post-input-element">
               <label for="event-date-input">Date of Event</label>
-              <input type="date" id="event-date-input">
+              <input type="date" id="event-date-input" name="event-date-input">
             </div>
             <div class="post-input-element">
               <label for="event-time-input">Time of Event</label>
-              <input type="time" id="event-time-input">
+              <input type="time" id="event-time-input" name="event-time-input">
             </div>
             <div class="post-input-element">
               <label for="event-description-input">Short Description</label>
-              <input type="text" id="event-description-input">
+              <input type="text" id="event-description-input" name="event-description-input">
             </div>
           </div>
           <div class="modal-footer">

@@ -11,7 +11,7 @@ if (mysqli_connect_errno()) {
 $username = mysqli_real_escape_string($conn, $_POST['volunteer-username-input']);
 $password = mysqli_real_escape_string($conn, $_POST['volunteer-password-input']);
 
-$sql = "INSERT INTO UserAccount VALUES ('" . $username . "', '" . $password . "');";
+$sql = "INSERT INTO UserAccount (username, password) VALUES ('" . $username . "', '" . $password . "');";
 if (!mysqli_query($conn, $sql)) {
   die("Failed to create your account. Please try again or contact an administrator.");
 }
