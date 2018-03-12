@@ -155,7 +155,7 @@ a:focus {
   background-color: blue;
 }
 
-#register-button {
+#register-button, #signout {
     margin-top: 15px;
   /* margin-left: 10px; */
   margin-right: 35px;
@@ -174,8 +174,17 @@ a:focus {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+#signout {
+  font-family: "Cantarell";
+  text-align: center;
+  height: 33px;
+  padding-top: 5px;
+}
+
 #register-button:hover,
-#register-button:focus {
+#register-button:focus,
+#signout:hover,
+#signout:focus {
     margin-top: 15px;
   right: 27px;
   bottom: 30px;
