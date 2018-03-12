@@ -62,8 +62,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
            the posts in the database using handlebars but at the moment these
            posts serve as an example of what a posts should like, and what the
            posts feed should look like - coulby nguyen -->
-      <!-- example post -->
-      <section id="data">
+      <!-- example post -->zz
       <div class="event" data-location="Salem" data-date="08/12/2017" data-time="13:00">
         <div class="eventContainer">
           <div class="eventDetails">
@@ -180,7 +179,6 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == true) { ?>
           </div>
         </div>
       </div>
-    </section>
     </main>
     <div id="login-modal-backdrop" class="hidden"></div>
     <div id="login-modal" class="hidden">
