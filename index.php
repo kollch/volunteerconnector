@@ -27,10 +27,10 @@ if (mysqli_connect_errno()) {
 	  <h1 class="site-title">Volunteer Connector
 <?php
 if (isset($_SESSION['username'])) { ?>
-	    <button type="button" id="signin-button">Login</button>
+            <a href="./logout.php" id="signout">Logout</a>
 <?php
 } else { ?>
-            <a href="./logout.php" id="signout">Logout</a>
+	    <button type="button" id="signin-button">Login</button>
 <?php } ?>
             <button type="button" id="register-button">Register</button></h1>
           <nav class="navbar">
