@@ -33,7 +33,12 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
               </li>
             </ul>
           </nav>
+        </div>
+        <!-- i think this one needs to be moved higher -->
+      </div>
+      <!-- i think this one is correct -->
           <!-- below is the organization info/name/pic container -->
+          <section id="class">
           <div class="event-title-container">
             <div class="event-title-box">
               <h1>HOOPLA VOLUNTEERS POST#1</h1>
@@ -56,6 +61,7 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
             <!-- this div provides space  -->
           </div>
           <!-- below here should be the event description  -->
+
           <div class="event-description-container">
             <div class="event-description-box">
               <p>Hoopla presented by Columbia Bank &amp; Dutch Bros. is the premier 3-on-3 street basketball event in Oregon, and it is believed to be the 2nd largest event of its kind in the United States.</p>
@@ -64,9 +70,10 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
               <p>Friends, family, fun, and ball. It's all good.</p>
               <p>We hope you will join us at the grand-daddy of all Oregon 3-on-3 events this August!</p>
             </div>
-	  </div>
-        </div>
-      </div>
+	         </div>
+         </section>
+         <!-- </div> i dont think these are in the right place -->
+       <!-- </div>  this one too-->
     </header>
   </body>
 </html>
