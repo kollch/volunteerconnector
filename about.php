@@ -19,17 +19,14 @@
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink"><a href="./index.php">Home</a></li>
-	      <!-- change the linke of the address above to the root i.e. "/"-->
 <?php
 if (isset($_SESSION['is_charity']) && $_SESSION['is_charity'] == 1) { ?>
               <li class="navitem navlink"><a href="./account.php">Account</a></li>
-	      <!-- change the address of this link to just ./account the php is not the correct location of that page -->
 <?php } ?>
               <li class="navitem navlink active"><a href="./about.php">About</a></li>
-              <!-- change the address of this link to just ./account the .php is not the correct location of that page -->
               <li class="navitem navbar-search">
                 <input type="text" id="navbar-search-input" placeholder="Search...">
-                <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+                <button type="button" id="navbar-search-button"><em class="fa fa-search"></em></button>
               </li>
             </ul>
           </nav>

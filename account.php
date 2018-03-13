@@ -38,7 +38,7 @@ if (mysqli_connect_errno()) {
               <li class="navitem navlink"><a href="./about.php">About</a></li>
               <li class="navitem navbar-search">
                 <input type="text" id="navbar-search-input" placeholder="Search...">
-                <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+                <button type="button" id="navbar-search-button"><em class="fa fa-search"></em></button>
               </li>
             </ul>
           </nav>

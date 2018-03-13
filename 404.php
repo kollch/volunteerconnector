@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <!-- The <em> tag below includes the bullhorn icon from Font Awesome -->
       <a href="/"><h1 class="site-title">Volunteer Connector</h1></a>
       <nav class="navbar">
         <ul class="navlist">
@@ -24,7 +24,7 @@
           <li class="navitem navlink"><a href="#">People</a></li>
           <li class="navitem navbar-search">
             <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+            <button type="button" id="navbar-search-button"><em class="fa fa-search"></em></button>
           </li>
         </ul>
       </nav>
@@ -32,7 +32,7 @@
 
     <main class="error-container">
       <h2>404</h2>
-      <h3>Woops!  We couldn't find that page.</h3>
+      <h3>Woops! We couldn't find that page.</h3>
     </main>
   </body>
 
