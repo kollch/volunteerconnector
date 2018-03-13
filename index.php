@@ -31,8 +31,9 @@ if (isset($_SESSION['username'])) { ?>
 <?php
 } else { ?>
 	    <button type="button" id="signin-button">Login</button>
+            <button type="button" id="register-button">Register</button>
 <?php } ?>
-            <button type="button" id="register-button">Register</button></h1>
+          </h1>
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink active"><a href="./index.php">Home</a></li>
