@@ -63,7 +63,7 @@ $sql = "SELECT title, location, date, description, name FROM Post ORDER BY date 
 $result = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
   $date = date('Y-m-d', strtotime($row["date"]));
-  $time = date('H:i', strtotime($timestamp));
+  $time = date('H:i', strtotime($row["date"]));
 
   echo '<div class="event" data-location="' . $row["location"] . '" data-date="' . $date . '" data-time="' . $time . '">'; ?>
         <div class="eventContainer">
