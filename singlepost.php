@@ -56,7 +56,6 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
 <?php
 echo '<h1>' . $post . '</h1>';
 ?>
-<!--              <h1>HOOPLA VOLUNTEERS POST#1</h1> -->
             </div>
           </div>
           <div class="organization-container">
@@ -64,7 +63,6 @@ echo '<h1>' . $post . '</h1>';
 <?php
 echo '<h1>' . $charity . '</h1>';
 ?>
-<!--              <h1>Columbia Bank & Dutch Bros.</h1> -->
             </div>
           </div>
           <div class="event-details-container">
@@ -74,10 +72,6 @@ echo '<p><strong>TIME:</strong> ' . $time . '</p>';
 echo '<p><strong>DATE:</strong> ' . $date . '</p>';
 echo '<p><strong>LOCATION:</strong> ' . $location . '</p>';
 ?>
-<!--              <p><strong>TIME:</strong> 13:00</p>
-              <p><strong>DATE:</strong> 08/12/2017</p>
-              <p><strong>LOCATION:</strong> Salem Capitol</p> -->
-              <!-- <p><strong># OF VOLUNTEERS:</strong> 100</p> -->
             </div>
           </div>
           <div class="spacejam">
@@ -89,11 +83,6 @@ echo '<p><strong>LOCATION:</strong> ' . $location . '</p>';
 <?php
 echo '<p>' . $description . '</p>';
 ?>
-<!--              <p>Hoopla presented by Columbia Bank &amp; Dutch Bros. is the premier 3-on-3 street basketball event in Oregon, and it is believed to be the 2nd largest event of its kind in the United States.</p>
-              <p>The special 20th edition of Hoopla will be held August 4th &amp; 5th in 2018, and upwards of 1,000 teams, 4,000 participants, 900 volunteers and thousands of spectators are anticipated.</p>
-              <p>Participants young and old, male and female, and of all skill levels compete in the shadows of the Oregon State Capitol Building in Salem. Some play in one favorite division, others play on multiple teams in several divisions, enhancing their HATER (Hoopa All-Time Efficiency Rating).</p>
-              <p>Friends, family, fun, and ball. It's all good.</p>
-              <p>We hope you will join us at the grand-daddy of all Oregon 3-on-3 events this August!</p> -->
             </div>
 	  </div>
         </div>
