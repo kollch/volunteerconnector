@@ -34,6 +34,6 @@ if (!mysqli_query($conn, $sql)) {
 }
 mysqli_close($conn);
 $_SESSION['username'] = $name;
-$_SESSION['is_charity'] = 0;
+$_SESSION['is_charity'] = 1;
 header('Location: index.php');
 ?>
