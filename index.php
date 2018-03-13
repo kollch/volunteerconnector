@@ -102,7 +102,7 @@ mysqli_free_result($result);
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-cancel-button" name="login-cancel">Cancel</button>
           <input type="submit" class="modal-accept-button" name="login-submit" value="Login">
         </div>
       </form>
@@ -122,7 +122,7 @@ mysqli_free_result($result);
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-cancel-button" name="register-choice-cancel">Cancel</button>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@ mysqli_free_result($result);
           </div>          
         </div>
         <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-cancel-button" name="charity-register-cancel">Cancel</button>
           <input type="submit" class="modal-accept-button" name="charity-register-submit" value="Register">
         </div>
       </form>
@@ -175,7 +175,7 @@ mysqli_free_result($result);
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-cancel-button" name="volunteer-register-cancel">Cancel</button>
           <input type="submit" class="modal-accept-button" name="volunteer-user-submit" value="Register">
         </div>
       </form>
