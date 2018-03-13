@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+if (!isset($_SESSION['username']) || $_SESSION['is_charity'] != 1) {
+  header("HTTP/1.0 403 Access Denied");
+  echo '<h1>403 Access Denied</h1>';
+  exit;
+}
+
 include 'database_creds.php';
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -50,31 +56,32 @@ if (mysqli_connect_errno()) {
         <div class="mypostsheader event">
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="./singlepost.php" class="eventTitle">MY POSTS </a>
+              <a href="#" class="eventTitle">MY POSTS</a>
             </div>
           </div>
         </div>
-        <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
+<?php
+$sql = "SELECT title, location, date FROM Post WHERE name = '" . $_SESSION['username'] . "' ORDER BY date ASC;";
+$result = mysqli_query($conn, $sql);
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+  $date = date('Y-m-d', strtotime($row["date"]));
+  $time = date('H:i', strtotime($row["date"]));
+  echo '<div class="event" data-location="' . $row["location"] . '" data-date="' . $date . '" data-time="' . $time . '">';
+?>
           <div class="eventContainer">
             <div class="eventDetails">
-              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
+<?php
+  echo '<a href="./singlepost.php?title=' . urlencode($row["title"]) . '" class="eventTitle">' . $row["title"] . '</a><br />';
+  echo '<span class="date">' . $date . '</span> <span class="time">' . $time . '</span> <span class="location">' . $row["location"] . '</span>';
+?>
             </div>
-          </div>
+	  </div>
         </div>
-        <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
-          <div class="eventContainer">
-            <div class="eventDetails">
-              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
-            </div>
-          </div>
-        </div>
-        <div class="event" data-location="Corvallis" data-date="08/12/2017" data-time="13:00">
-          <div class="eventContainer">
-            <div class="eventDetails">
-              <a href="./singlepost.php" class="eventTitle"> Campus Tours </a><br> <span class="date">08/12/2017</span> <span class="time">13:00</span><span class="location"> OSU Campus</span>
-            </div>
-          </div>
-        </div>
+<?php
+}
+mysqli_free_result($result);
+mysqli_close($conn);
+?>
       </section>
     </main>
 
