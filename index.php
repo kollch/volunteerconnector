@@ -103,7 +103,7 @@ mysqli_free_result($result);
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <input type="submit" class="modal-accept-button" value="Login">
+          <input type="submit" class="modal-accept-button" name="login-submit" value="Login">
         </div>
       </form>
     </div>
@@ -153,7 +153,7 @@ mysqli_free_result($result);
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <input type="submit" class="modal-accept-button" value="Register">
+          <input type="submit" class="modal-accept-button" name="charity-register-submit" value="Register">
         </div>
       </form>
     </div>
@@ -176,7 +176,7 @@ mysqli_free_result($result);
         </div>
         <div class="modal-footer">
           <button type="button" class="modal-cancel-button">Cancel</button>
-          <input type="submit" class="modal-accept-button" value="Register">
+          <input type="submit" class="modal-accept-button" name="volunteer-user-submit" value="Register">
         </div>
       </form>
     </div>
