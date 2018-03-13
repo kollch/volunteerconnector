@@ -34,11 +34,8 @@ if (mysqli_connect_errno()) {
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink"><a href="./index.php">Home</a></li>
-              <!-- change the linke of the address above to the root i.e. "/"-->
               <li class="navitem navlink active"><a href="./account.php">Account</a></li>
-              <!-- change the address of this link to just ./account the php is not the correct location of that page -->
               <li class="navitem navlink"><a href="./about.php">About</a></li>
-              <!-- change the address of this link to just ./account the .php is not the correct location of that page -->
               <li class="navitem navbar-search">
                 <input type="text" id="navbar-search-input" placeholder="Search...">
                 <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
@@ -91,7 +88,7 @@ mysqli_close($conn);
     <div id="add-event-modal-backdrop" class="hidden"></div>
     <div id="add-event-modal" class="hidden">
       <div id="add-event-modal" class="">
-        <form class="modal-dialog" action="/post.php" method="post">
+        <form class="modal-dialog" action="./post.php" method="post">
           <div class="modal-header">
             <h3>Post New Opportunity</h3>
             <!-- <button type="button" id="modal-close" class="modal-hide-button">&times;</button> -->
@@ -100,23 +97,23 @@ mysqli_close($conn);
           <div class="modal-body">
             <div class="post-input-element">
               <label for="event-name-input">Name Of Event</label>
-              <input type="text" id="event-name-input"></input>
+              <input type="text" id="event-name-input" name="event-name-input" required>
             </div>
             <div class="post-input-element">
               <label for="event-location-input">Location Of Event</label>
-              <input type="text" id="event-location-input"></input>
+              <input type="text" id="event-location-input" name="event-location-input" required>
             </div>
             <div class="post-input-element">
               <label for="event-date-input">Date of Event</label>
-              <input type="date" id="event-date-input">
+              <input type="date" id="event-date-input" name="event-date-input">
             </div>
             <div class="post-input-element">
               <label for="event-time-input">Time of Event</label>
-              <input type="time" id="event-time-input">
+              <input type="time" id="event-time-input" name="event-time-input">
             </div>
             <div class="post-input-element">
               <label for="event-description-input">Short Description</label>
-              <input type="text" id="event-description-input">
+              <input type="text" id="event-description-input" name="event-description-input">
             </div>
           </div>
           <div class="modal-footer">
