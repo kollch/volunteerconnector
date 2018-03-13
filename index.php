@@ -19,7 +19,6 @@ if (mysqli_connect_errno()) {
     <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="./style.css" media="screen">
-    <script src="./index.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
@@ -341,4 +340,5 @@ mysqli_free_result($result);
       </div>
     </div>
   </body>
+  <script src="./index.js" charset="utf-8"></script>
 </html>
