@@ -39,11 +39,11 @@ $charity = $row["name"];
           <nav class="navbar">
             <ul class="navlist">
               <li class="navitem navlink"><a href="./index.php">Home</a></li>
-              <li class="navitem navlink"><a href="./account.php">Account</a></li>
 <?php
 if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
-              <li class="navitem navlink"><a href="./about.php">About</a></li>
+              <li class="navitem navlink"><a href="./account.php">Account</a></li>
 <?php } ?>
+              <li class="navitem navlink"><a href="./about.php">About</a></li>
               <li class="navitem navbar-search">
                 <input type="text" id="navbar-search-input" placeholder="Search...">
                 <button type="button" id="navbar-search-button"><em class="fa fa-search"></em></button>
