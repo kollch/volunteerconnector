@@ -50,6 +50,8 @@ if (isset($_SESSION['is_charity']) && $_SESSION['is_charity']) { ?>
               </li>
             </ul>
           </nav>
+        </div>
+      </div>
           <!-- below is the organization info/name/pic container -->
           <div class="event-title-container">
 	    <div class="event-title-box">
@@ -85,8 +87,7 @@ echo '<p>' . $description . '</p>';
 ?>
             </div>
 	  </div>
-        </div>
-      </div>
+
     </header>
   </body>
 </html>
